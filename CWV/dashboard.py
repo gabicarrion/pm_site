@@ -7,9 +7,9 @@ import os
 import shutil
 
 # Define the base directory (where your script is located)
-BASE_DIR = 'I:\\Meu Drive\\pm_site\\CWV'
-HISTORY_DIR = BASE_DIR + '\\history'
-css_path = 'I:\\Meu Drive\\pm_site\\CWV\\style.css'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+HISTORY_DIR = os.path.join(BASE_DIR, 'history')
+css_path = os.path.join(BASE_DIR, 'style.css')
 
 # Set page config
 st.set_page_config(
